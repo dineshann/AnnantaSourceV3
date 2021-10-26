@@ -1,5 +1,6 @@
-.introduction {
+.aboutSec {
     padding: 5rem 0;
+    @include linear-gradient-from-bottom(#040d47, #300088);
 
     &__heading {
         .lightH {

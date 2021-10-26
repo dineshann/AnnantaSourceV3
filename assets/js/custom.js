@@ -21,4 +21,16 @@ $(document).ready(function () {
             }
         });
     }
+
+    // ------------------------------------------------------- //
+    //   Open & Close Search Panel
+    // ------------------------------------------------------ //
+    $('[data-bs-toggle="search"]').on("click", function () {
+        $(".search-area-wrapper").show();
+        $(".search-area-input").focus();
+    });
+
+    $(".search-area-wrapper .close-btn").on("click", function () {
+        $(".search-area-wrapper").hide();
+    });
 });

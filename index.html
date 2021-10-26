@@ -42,142 +42,159 @@
 
 <body>
     <header class="header header-absolute">
-        <!-- Top Bar-->
-        <div class="top-bar d-none">
-            <div class="container-fluid">
-                <div class="row d-flex align-items-center">
-                    <div class="col-sm-7 d-none d-sm-block">
-                        <ul class="list-inline topbar-text mb-0">
-                            <li class="list-inline-item pe-3 me-0">
-                                <svg class="svg-icon me-2">
-                                    <use xlink:href="#calls-1"> </use>
-                                </svg>020-800-456-747
-                            </li>
-                            <li class="list-inline-item px-3 border-start d-none d-lg-inline-block">Free shipping on
-                                orders over $300</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-5 d-flex justify-content-end">
-                        <!-- Language Dropdown-->
-                        <div class="dropdown border-end px-3"><a class="dropdown-toggle topbar-link" id="langsDropdown"
-                                href="#" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true"
-                                aria-expanded="false"><img class="topbar-flag"
-                                    src="https://d19m59y37dris4.cloudfront.net/sell/2-0/img/flag/gb.svg"
-                                    alt="english">English</a>
-                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated"
-                                aria-labelledby="langsDropdown"><a class="dropdown-item text-sm" href="#"><img
-                                        class="topbar-flag"
-                                        src="https://d19m59y37dris4.cloudfront.net/sell/2-0/img/flag/de.svg"
-                                        alt="german">German</a><a class="dropdown-item text-sm" href="#"> <img
-                                        class="topbar-flag"
-                                        src="https://d19m59y37dris4.cloudfront.net/sell/2-0/img/flag/fr.svg"
-                                        alt="french">French</a></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 col-xl-12 mx-auto">
+
+                    <!-- Top Bar-->
+                    <div class="top-bar">
+                        <div class="container-fluid">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-sm-7 d-none d-sm-block">
+                                </div>
+                                <div class="col-sm-5 d-flex justify-content-end">
+                                    <a href="javascript:void(0);" class="topbar-link" data-bs-toggle="search"><i
+                                            class="icofont-search"></i></a>
+                                    <a href="" class="topbar-link">Career</a>
+                                    <a href="" class="topbar-link">News &amp; Insights</a>
+                                </div>
+                            </div>
                         </div>
-                        <!-- Currency Dropdown-->
-                        <div class="dropdown ps-3 ms-0"><a class="dropdown-toggle topbar-link" id="currencyDropdown"
-                                href="#" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true"
-                                aria-expanded="false"> <i class="fas fa-dollar-sign text-xs align-middle mt-n1 me-2">
-                                </i>USD</a>
-                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated"
-                                aria-labelledby="currencyDropdown"><a class="dropdown-item text-sm" href="#"> <i
-                                        class="fas fa-euro-sign text-xs align-middle mt-n1 me-2"> </i>EUR</a><a
-                                    class="dropdown-item text-sm" href="#"><i
-                                        class="fas fa-pound-sign text-xs align-middle mt-n1 me-2"> </i>GBP</a></div>
+                    </div>
+                    <!-- Top Bar End-->
+                    <!-- Navbar-->
+                    <nav class="navbar navbar-expand-lg bg-transparent navbar-light navbar-airy bg-fixed-dark"
+                        id="navbar_top">
+                        <div class="container-fluid">
+                            <!-- Navbar Header  -->
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/img/logo.png" alt="">
+                            </a>
+                            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                                aria-label="Toggle navigation"><i class="icofont-navigation-menu"></i></button>
+                            <!-- Navbar Collapse -->
+                            <div class="collapse navbar-collapse" id="navbarCollapse">
+                                <ul class="navbar-nav mx-auto">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle active" id="serivesDropdownMenuLink" href="#"
+                                            data-bs-target="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Services </a>
+                                        <div class="dropdown-menu dropdown-menu-animated"
+                                            aria-labelledby="serivesDropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Custom Software Development</a>
+                                            <a class="dropdown-item" href="#">Product Development</a>
+                                            <a class="dropdown-item" href="#">AI/ML Services</a>
+                                            <a class="dropdown-item" href="#">Data Engineering</a>
+                                            <a class="dropdown-item" href="#">IoT Applications</a>
+                                            <a class="dropdown-item" href="#">Enterprise Application</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Products</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle active" id="industriesDropdownMenuLink"
+                                            href="#" data-bs-target="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Industries </a>
+                                        <div class="dropdown-menu dropdown-menu-animated"
+                                            aria-labelledby="industriesDropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Government</a>
+                                            <a class="dropdown-item" href="#">Automotive</a>
+                                            <a class="dropdown-item" href="#">Education</a>
+                                            <a class="dropdown-item" href="#">Healthcare</a>
+                                            <a class="dropdown-item" href="#">Hospitality</a>
+                                            <a class="dropdown-item" href="#">E-Commerce</a>
+                                            <a class="dropdown-item" href="#">Manufacturing</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Investors</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle active" id="companyDropdownMenuLink" href="#"
+                                            data-bs-target="#" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Company </a>
+                                        <div class="dropdown-menu dropdown-menu-animated"
+                                            aria-labelledby="companyDropdownMenuLink">
+                                            <a class="dropdown-item" href="#">About Us</a>
+                                            <a class="dropdown-item" href="#">Leadership</a>
+                                            <a class="dropdown-item" href="#">Partners</a>
+                                            <a class="dropdown-item" href="#">Our Culture</a>
+                                            <a class="dropdown-item" href="#">Client Stories</a>
+                                            <a class="dropdown-item" href="#">CSR</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                                <div
+                                    class="d-flex align-items-center justify-content-between justify-content-lg-end mt-1 mb-2 my-lg-0">
+                                    <div class="nav-item me-2">
+                                        <a class="btn btn- btn-outline-light rounded-pill" href="#">Book Demo</a>
+                                    </div>
+                                    <div class="nav-item">
+                                        <a class="btn btn- btn-light rounded-pill" href="#">Start a Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- /Navbar -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Fullscreen search area-->
+        <div class="search-area-wrapper">
+            <div class="search-area d-flex align-items-center justify-content-center">
+                <div class="close-btn">
+                    <i class="icofont-close-line"></i>
+                </div>
+                <form class="search-area-form" action="#">
+                    <div class="mb-4 position-relative">
+                        <input class="search-area-input" type="search" name="search" id="search"
+                            placeholder="What are you looking for?">
+                        <button class="search-area-button" type="submit">
+                            <i class="icofont-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /Fullscreen search area-->
+    </header>
+
+    <section class="introSec">
+        <div class="home-full-item dark-overlay h-100">
+            <img class="introSec__bg" src="assets/img/hero_bg.jpg" alt="">
+            <div class="container-fluid h-100">
+                <div class="row h-100">
+                    <div class="col-lg-10 col-xl-8 mx-auto text-center overlay-content">
+                        <img class="bg-image" src="assets/img/hero.png" alt="">
+                        <div class="content">
+                            <p class="text-white">Lorem Ipsum</p>
+                            <h1 class="mb-5 display-2 text-white fw-bold">Accelerating <br> Innovation
+                            </h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Top Bar End-->
-        <!-- Navbar-->
-        <nav class="navbar navbar-expand-lg bg-transparent navbar-light navbar-airy bg-fixed-dark" id="navbar_top">
-            <div class="container-fluid">
-                <!-- Navbar Header  -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo.png" alt="">
-                </a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                    aria-label="Toggle navigation"><i class="icofont-navigation-menu"></i></button>
-                <!-- Navbar Collapse -->
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" id="serivesDropdownMenuLink" href="#"
-                                data-bs-target="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Services </a>
-                            <div class="dropdown-menu dropdown-menu-animated" aria-labelledby="serivesDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Custom Software Development</a>
-                                <a class="dropdown-item" href="#">Product Development</a>
-                                <a class="dropdown-item" href="#">AI/ML Services</a>
-                                <a class="dropdown-item" href="#">Data Engineering</a>
-                                <a class="dropdown-item" href="#">IoT Applications</a>
-                                <a class="dropdown-item" href="#">Enterprise Application</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Products</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" id="industriesDropdownMenuLink" href="#"
-                                data-bs-target="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Industries </a>
-                            <div class="dropdown-menu dropdown-menu-animated"
-                                aria-labelledby="industriesDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Government</a>
-                                <a class="dropdown-item" href="#">Automotive</a>
-                                <a class="dropdown-item" href="#">Education</a>
-                                <a class="dropdown-item" href="#">Healthcare</a>
-                                <a class="dropdown-item" href="#">Hospitality</a>
-                                <a class="dropdown-item" href="#">E-Commerce</a>
-                                <a class="dropdown-item" href="#">Manufacturing</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Investors</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" id="companyDropdownMenuLink" href="#"
-                                data-bs-target="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Company </a>
-                            <div class="dropdown-menu dropdown-menu-animated" aria-labelledby="companyDropdownMenuLink">
-                                <a class="dropdown-item" href="#">About Us</a>
-                                <a class="dropdown-item" href="#">Leadership</a>
-                                <a class="dropdown-item" href="#">Partners</a>
-                                <a class="dropdown-item" href="#">Our Culture</a>
-                                <a class="dropdown-item" href="#">Client Stories</a>
-                                <a class="dropdown-item" href="#">CSR</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                    <div
-                        class="d-flex align-items-center justify-content-between justify-content-lg-end mt-1 mb-2 my-lg-0">
-                        <div class="nav-item me-2">
-                            <a class="btn btn- btn-outline-light rounded-pill" href="#">Book Demo</a>
-                        </div>
-                        <div class="nav-item">
-                            <a class="btn btn- btn-light rounded-pill" href="#">Start a Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!-- /Navbar -->
-    </header>
+    </section>
 
-    <section class="introSec mb-2">
-        <div class="home-full-item dark-overlay h-100">
-            <img class="introSec__bg" src="assets/img/hero_bg.jpg" alt="">
+    <section class="aboutSec h-100">
+        <div class="home-full-item h-100">
             <div class="container-fluid h-100">
-                <div class="row align-items-center h-100">
+                <div class="row h-100">
                     <div class="col-lg-10 col-xl-8 mx-auto text-center overlay-content">
-                        <img class="bg-image" src="assets/img/hero.png" alt="">
                         <div class="content">
                             <p class="text-white">Lorem Ipsum</p>
-                            <h1 class="mb-5 display-2 text-white text-uppercase fw-bold">Accelerating <br> Innovation
+                            <h1 class="mb-5 display-2 text-white fw-bold">Accelerating <br> Innovation
                             </h1>
                         </div>
                     </div>
