@@ -1,0 +1,23 @@
+/* Annanta Source LLC website */
+// Annanta Source LLC v3.0.1
+/* 18 Oct 2021 */
+
+/* Code by DInesh */
+
+// Landing Page SASS to CSS
+// cd assets
+// Compile Path sass --watch sass/style.scss:css/style.css
+
+// Base
+@import 'base/variables';
+@import "base/mixins";
+@import "base/general";
+@import "base/typography";
+
+// Layout
+@import "layout/loader";
+@import "layout/nav";
+@import "layout/home";
+@import "layout/introduction";
+@import "layout/footer";
+

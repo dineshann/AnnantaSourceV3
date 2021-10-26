@@ -1,0 +1,30 @@
+.introduction {
+    padding: 5rem 0;
+
+    &__heading {
+        .lightH {
+            font-size: 3rem;
+            color: $clight;
+            margin-bottom: 0;
+            @include md-updown {
+                font-size: 1.6rem;
+            }
+        }
+        .darkH {
+            font-size: 3.5rem;
+            font-weight: 700;
+            @include md-updown {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__content {
+        font-size: 1.25rem;
+        line-height: 32px;
+        @include md-updown {
+            font-size: 1.2rem;
+            line-height: 30px;
+        }
+    }
+}
