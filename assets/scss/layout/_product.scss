@@ -1,0 +1,163 @@
+.productSec {
+    position: relative;
+    padding: 6rem 0;
+    background: rgb(4,12,60);
+    background: -moz-linear-gradient(180deg, rgba(4,12,60,1) 0%, rgba(9,12,36,1) 45%, rgba(13,13,13,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(4,12,60,1) 0%, rgba(9,12,36,1) 45%, rgba(13,13,13,1) 100%);
+    background: linear-gradient(180deg, rgba(4,12,60,1) 0%, rgba(9,12,36,1) 45%, rgba(13,13,13,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#040c3c",endColorstr="#0d0d0d",GradientType=1);
+
+    @include md-updown {
+        padding: 4rem 0;
+    }
+
+    &__content {
+        width: 80%;
+
+        @include xl-down {
+            width: 90%;
+        }
+
+        @include md-updown {
+            width: 100%;
+        }
+        @include md-down {
+            width: 100%;
+        }
+
+        h1 {
+            span {
+                font-weight: 200;
+
+                &.semiBold {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    &__subheading {
+        position: relative;
+        width: 60%;
+        display: block;
+        margin-left: auto;
+
+        @include xl-down {
+            width: 90%;
+        }
+
+        @include md-updown {
+            width: 80%;
+            margin-left: auto;
+        }
+
+        @include md-down {
+            width: 50%;
+            margin-left: 0;
+        }
+
+        h4 {
+            color: $cwhite;
+            font-weight: 500;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            @include transition($all);
+
+            @include md-updown {
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+            }
+        }
+
+        svg {
+            @include transition($all);
+        }
+
+        &:hover {
+            h4 {
+                color: lighten($cblue, 30%);
+            }
+
+            svg {
+                stroke: lighten($cblue, 30%);
+            }
+        }
+    }
+
+    &__pro {
+        position: relative;
+        display: block;
+        @include transition($all);
+
+        img {
+            position: relative;
+            border-radius: $border12;
+            margin-bottom: 0;
+            width: 100%;
+        }
+
+        &.fHight {
+            height: 100%;
+
+            @include md-down {
+                height: auto;
+            }
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .proTag {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 0.4rem 0.8rem;
+            border-radius: $border12;
+            font-size: 1rem;
+            color: lighten($cdark, 30%);
+            background-color: rgba($cwhite, 0.4);
+            border: 1px solid lighten($cdark, 70%);
+        }
+
+        .proLink {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            padding: 1.2rem 2rem 1rem;
+            border-radius: 0 0 $border12 $border12;
+            @include transition($all);
+            @include linear-gradient-from-bottom($cdark, transparent);
+
+            > div {
+                width: 80%;
+
+                h5 {
+                    color: $cwhite;
+                }
+                
+                h4 {
+                    color: $cwhite;
+                }
+            }
+
+            svg {
+                display: none;
+                @include transition($all);
+            }
+        }
+
+        &:hover {
+            .proLink {
+                @include linear-gradient-from-bottom($cblue, $cblue);
+
+                svg {
+                    display: block;
+                }
+            }
+        }
+    }
+}

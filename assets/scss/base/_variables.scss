@@ -1,16 +1,12 @@
 // Fonts
 @import                 url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap);
-$Roboto:                 'Roboto', sans-serif;
+$Roboto:                'Roboto', sans-serif;
 $body-font:             $Roboto;
 $heading-font:          $Roboto;
 
 
-// Bootstrap Colors
-$primary:             #0070C9;
-$secondary:           rgb(163, 143, 143);
-
-
 // Colors
+$cblue:                 #003da5;
 $cdark:                 #262A29;
 $clight:                #cfcfcf;
 $cgrey:                 #7D7D7D;
@@ -47,4 +43,4 @@ $border2:               2px;
 
 
 // Transition
-$all: all .3s ease-in-out;
+$all: all .5s ease-in-out;

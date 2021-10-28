@@ -80,6 +80,7 @@
                     font-weight: 200;
                 }
             }
+            
             &__p {
                 color: $cwhite;
                 font-weight: 300;
@@ -93,8 +94,33 @@
                 }
             }
 
-            a {
+            a.btn-line {
                 color: $cwhite;
+                font-weight: 600;
+                text-decoration: none;
+                -webkit-transition: all .4s cubic-bezier(.2, .59, .21, .6);
+                -o-transition: all .4s cubic-bezier(.2, .59, .21, .6);
+                transition: all .4s cubic-bezier(.2, .59, .21, .6);
+                position: relative;
+                &:hover, &.active {
+                    color: lighten($cblue, 30%);
+                    &:before {
+                    width: 100%;
+                    }
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 0;
+                    background: lighten($cblue, 30%);
+                    height: 2px;
+                    border-radius: $border2;
+                    -webkit-transition: all .4s cubic-bezier(.2, .59, .21, .6);
+                    -o-transition: all .4s cubic-bezier(.2, .59, .21, .6);
+                    transition: all .4s cubic-bezier(.2, .59, .21, .6);
+                }
             }
         }
 

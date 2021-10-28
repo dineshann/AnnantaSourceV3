@@ -1,3 +1,6 @@
+// Menu btn padding: 0.6rem 2rem; 
+
+
 header {
     @include md-updown {
       background: rgb(34 5 115 / 90%);
@@ -64,7 +67,7 @@ header {
 
         &.fixed-top {
             position: fixed;
-            background: rgb(34 5 115 / 80%);
+            background: rgb(28 28 28 / 80%);
             -webkit-backdrop-filter: saturate(180%) blur(20px);
             backdrop-filter: saturate(180%) blur(20px);
             animation: smoothScroll 1s forwards;

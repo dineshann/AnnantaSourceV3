@@ -33,4 +33,39 @@ $(document).ready(function () {
     $(".search-area-wrapper .close-btn").on("click", function () {
         $(".search-area-wrapper").hide();
     });
+
+    // Software Solution SLide
+    $(".solutionSec__slide").slick({
+        slidesToShow: 5,
+        infinite: true,
+        speed: 500,
+        responsive: [{
+                breakpoint: 1040,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 960,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 });

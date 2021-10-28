@@ -1,0 +1,180 @@
+.solutionSec {
+    position: relative;
+    padding: 6rem 0 0;
+    @include linear-gradient-from-bottom(#000000, #0d0d0d);
+    // background-image: linear-gradient(to top, #000000, #0d0d0d), url(../img/circlePattern.png);
+
+    @include md-updown {
+        padding: 4rem 0;
+    }
+
+    &__bg {
+        position: absolute;
+        width: 70%;
+        filter: grayscale(1);
+        top: 0;
+        left: 6%;
+        z-index: 0;
+    }
+
+    &__content {
+        width: 80%;
+        position: relative;
+        z-index: 1;
+
+        @include xl-down {
+            width: 90%;
+        }
+
+        @include md-updown {
+            width: 100%;
+        }
+        @include md-down {
+            width: 100%;
+        }
+
+        h1 {
+            color: $cwhite;
+        }
+    }
+
+    &__p {
+        color: $cwhite;
+        font-weight: 300;
+        font-size: 1.2rem;
+        width: 75%;
+        line-height: 28px;
+        position: relative;
+        z-index: 1;
+
+        @include md-down {
+            font-size: 1rem;
+            line-height: 24px;
+        }
+    }
+
+    a.btn-line {
+        color: $cwhite;
+        font-weight: 600;
+        text-decoration: none;
+        -webkit-transition: all .4s cubic-bezier(.2, .59, .21, .6);
+        -o-transition: all .4s cubic-bezier(.2, .59, .21, .6);
+        transition: all .4s cubic-bezier(.2, .59, .21, .6);
+        position: relative;
+        &:hover, &.active {
+            color: lighten($cblue, 30%);
+            &:before {
+            width: 100%;
+            }
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            background: lighten($cblue, 30%);
+            height: 2px;
+            border-radius: $border2;
+            -webkit-transition: all .4s cubic-bezier(.2, .59, .21, .6);
+            -o-transition: all .4s cubic-bezier(.2, .59, .21, .6);
+            transition: all .4s cubic-bezier(.2, .59, .21, .6);
+        }
+    }
+
+    &__slide {
+
+        .slick-arrow {
+            display: none;
+            @include transition($all);
+        }
+
+        .slick-prev, .slick-next {
+            border-radius: 0;
+            height: -webkit-fill-available;
+            &::before {
+                color: $cwhite;
+            }
+        }
+    
+        .slick-prev {
+            @include linear-gradient($cdark, transparent);
+        }
+    
+        .slick-next {
+            @include linear-gradient(transparent, $cdark);
+        }
+
+        .card-padding {
+            padding: 0 1rem;
+        }
+
+        &--cat {
+            position: relative;
+            display: block;
+            @include transition($all);
+
+            img {
+                position: relative;
+                border-radius: $border12;
+                margin-bottom: 0;
+                width: 100%;
+                min-height: 450px;
+                max-height: 450px;
+                object-fit: cover;
+            }
+
+            .catLink {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                padding: 1.2rem 2rem 1rem;
+                border-radius: 0 0 $border12 $border12;
+                @include transition($all);
+                @include linear-gradient-from-bottom($cwhite, transparent);
+
+                > div {
+                    width: 80%;
+
+                    h4 {
+                        font-size: 1.1rem;
+                        letter-spacing: 0.5px;
+                        margin-bottom: 0;
+                        color: $cdark;
+                    }
+                }
+
+                svg {
+                    display: none;
+                    @include transition($all);
+                }
+            }
+
+            &:hover {
+                .catLink {
+                    @include linear-gradient-from-bottom($cblue, $cblue);
+
+                    > div {
+                        h4 {
+                            color: $cwhite;
+                        }
+                    }
+
+                    svg {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .slick-arrow {
+                display: block;
+            }
+        }
+    }
+}
