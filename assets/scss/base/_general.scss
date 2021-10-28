@@ -58,3 +58,14 @@ body {
     user-select: none;
   }
 }
+
+
+.spacer {
+  position: relative;
+  min-height: 20vh;
+
+  &__small {
+    position: relative;
+    min-height: 10vh;
+  }
+}

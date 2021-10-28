@@ -18,17 +18,44 @@
         padding-top: 125px;
         padding-bottom: 62.5px;
         min-height: 600px;
-        height: auto
+        height: auto;
+
+        @include md-down {
+            padding-top: 180px;
+        }
     }
 
-    .overlay-content {
+    &__content {
         position: relative;
         z-index: 20;
         top: 14%;
 
-        img {
+        .bgImg {
             position: absolute;
             left: 0;
+            top: -12px;
+
+            @include md-updown {
+                top: 6%;
+            }
+
+            @include md-down {
+                top: 32%;
+            }
+        }
+
+        .content {
+            position: relative;
+            z-index: -1;
+
+            h1 {
+                &.display-1 {
+                    line-height: 1;
+                }
+                @include md-down {
+                    line-height: 48px;
+                }
+            }
         }
     }
 }

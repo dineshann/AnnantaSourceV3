@@ -1,31 +1,179 @@
 .aboutSec {
-    padding: 5rem 0;
-    @include linear-gradient-from-bottom(#040d47, #300088);
+    position: relative;
+    padding: 6rem 0;
+    background: rgb(48,0,136);
+    background: -moz-linear-gradient(180deg, rgba(48,0,136,1) 0%, rgba(44,18,179,1) 40%, rgba(4,12,60,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(48,0,136,1) 0%, rgba(44,18,179,1) 40%, rgba(4,12,60,1) 100%);
+    background: linear-gradient(180deg, rgba(48,0,136,1) 0%, rgba(44,18,179,1) 40%, rgba(4,12,60,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#300088",endColorstr="#040c3c",GradientType=1);
 
-    &__heading {
-        .lightH {
-            font-size: 3rem;
-            color: $clight;
-            margin-bottom: 0;
-            @include md-updown {
-                font-size: 1.6rem;
-            }
+    @include md-updown {
+        padding: 4rem 0;
+    }
+
+    @include md-down {
+        padding: 4rem 0;
+        background: rgb(48,0,136);
+        background: -moz-linear-gradient(180deg, #3e00c2 0%, rgba(44,18,179,1) 30%, rgba(5,56,167,1) 60%, rgba(4,12,60,1) 100%);
+        background: -webkit-linear-gradient(180deg, #3e00c2 0%, rgba(44,18,179,1) 30%, rgba(5,56,167,1) 60%, rgba(4,12,60,1) 100%);
+        background: linear-gradient(180deg, #3e00c2 0%, rgba(44,18,179,1) 30%, rgba(5,56,167,1) 60%, rgba(4,12,60,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3e00c2",endColorstr="#040c3c",GradientType=1);
+    }
+
+    &__content {
+        width: 75%;
+        @include md-updown {
+            width: 100%;
         }
-        .darkH {
-            font-size: 3.5rem;
-            font-weight: 700;
-            @include md-updown {
-                font-size: 2rem;
+        @include md-down {
+            width: 100%;
+        }
+
+        h1 {
+            span {
+                font-weight: 200;
             }
         }
     }
 
-    &__content {
-        font-size: 1.25rem;
-        line-height: 32px;
-        @include md-updown {
-            font-size: 1.2rem;
-            line-height: 30px;
+    &__subheading {
+        margin-top: 2rem;
+        img {
+            width: 30px;
+            margin-bottom: 2rem;
+
+            @include md-down {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        h3 {
+            color: $cwhite;
+            font-weight: 300;
+            font-size: 1.4rem;
+            width: 80%;
+
+            @include md-down {
+                font-size: 1.25rem;
+                width: 90%;
+                line-height: 1.8rem;
+            }
+        }
+    }
+
+    &__wedo {
+        position: relative;
+        
+        .content {
+            position: relative;
+            width: 50%;
+
+            @include md-updown {
+                width: 100%;
+            }
+            @include md-down {
+                width: 100%;
+            }
+
+            h1 {
+                span {
+                    font-weight: 200;
+                }
+            }
+            &__p {
+                color: $cwhite;
+                font-weight: 300;
+                font-size: 1.4rem;
+                width: 75%;
+                line-height: 32px;
+
+                @include md-down {
+                    font-size: 1rem;
+                    line-height: 24px;
+                }
+            }
+
+            a {
+                color: $cwhite;
+            }
+        }
+
+        .sideImg {
+            position: absolute;
+            width: 70%;
+            right: -5%;
+            top: -25%;
+
+            @include md-updown {
+                width: 75%;
+                top: -84%;
+                right: -2%;
+            }
+
+            @include md-down {
+                width: 80%;
+                top: -44%;
+                right: 0;
+            }
+        }
+    }
+
+    &__service {
+        position: relative;
+
+        .heading {
+            font-size: 2rem;
+            color: $cwhite;
+            margin-bottom: 3rem;
+        }
+
+        &--link {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 1rem 0;
+            @include transition($all);
+
+            h4 {
+                font-size: 1.4rem;
+                font-weight: 200;
+                color: $cwhite;
+                @include transition($all);
+            }
+
+            > div {
+                position: relative;
+                align-self: normal;
+                svg {
+                    position: absolute;
+                    display: none;
+                    @include transition($all);
+                }
+
+                span {
+                    font-size: 14px;
+                    color: rgba(255, 255, 255, 0.5);
+                    @include transition($all);
+                }
+            }
+
+            &:hover {
+                h4 {
+                    font-weight: 400;
+                }
+                >div {
+                    svg {
+                        display: block;
+                    }
+
+                    span {
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+            }
         }
     }
 }

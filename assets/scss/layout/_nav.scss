@@ -1,7 +1,17 @@
 header {
+    @include md-updown {
+      background: rgb(34 5 115 / 90%);
+    }
+    @include md-down {
+      background: rgb(34 5 115 / 90%);
+    }
     .top-bar {
       position: relative;
       padding-right: 1rem;
+
+      @include md-down {
+        display: none;
+      }
 
       .topbar-link {
         font-weight: 300;
@@ -83,6 +93,15 @@ header {
         padding-left: 0;
         margin-bottom: 0;
         list-style: none;
+
+        @include md-updown {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        @include md-down {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
       
         .nav-link {
             padding-right: 0;
@@ -336,8 +355,8 @@ header {
       
       @media (min-width: 1200px) {
         .navbar-airy .navbar-nav .nav-link {
-          padding-right: 1.5rem;
-          padding-left: 1.5rem;
+          padding-right: 1rem;
+          padding-left: 1rem;
         }
       }
       
@@ -531,7 +550,7 @@ header {
       
       @media (max-width: 991.98px) {
         .navbar.navbar-expand-lg {
-          padding: 0.6rem 1rem;
+          padding: 0.6rem 0;
       
           .dropdown-menu {
             margin-top: 0;
@@ -704,6 +723,16 @@ header {
         transition: .2s;
         vertical-align: bottom;
         border: none;
+
+        @include md-updown {
+          position: absolute;
+          right: 0;
+        }
+
+        @include md-down {
+          position: absolute;
+          right: 0;
+        }
       }
       
       .navbar .dropdown-toggle[aria-expanded='true']::after, .top-bar .dropdown-toggle[aria-expanded='true']::after {
