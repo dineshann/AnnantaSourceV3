@@ -1,6 +1,3 @@
-// Menu btn padding: 0.6rem 2rem; 
-
-
 header {
     @include md-updown {
       background: rgb(34 5 115 / 90%);
@@ -326,6 +323,10 @@ header {
       
         .nav-item {
           position: relative;
+
+          .acta {
+            padding: 0.6rem 2rem;
+          }
         }
       
         .nav-link {

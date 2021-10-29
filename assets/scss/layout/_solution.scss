@@ -8,6 +8,10 @@
         padding: 4rem 0;
     }
 
+    @include md-down {
+        padding: 0rem;
+    }
+
     &__bg {
         position: absolute;
         width: 70%;
@@ -83,6 +87,10 @@
     }
 
     &__slide {
+
+        @include md-down {
+            margin-top: 2rem;
+        }
 
         .slick-arrow {
             display: none;
