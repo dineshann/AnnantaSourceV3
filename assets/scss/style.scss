@@ -6,7 +6,7 @@
 
 // Landing Page SASS to CSS
 // cd assets
-// Compile Path sass --watch sass/style.scss:css/style.css
+// Compile Path sass --watch scss/style.scss:css/style.css
 
 // Base
 @import 'base/variables';
@@ -22,5 +22,6 @@
 @import "layout/about";
 @import "layout/product";
 @import "layout/solution";
+@import "layout/aboutPage";
 @import "layout/footer";
 

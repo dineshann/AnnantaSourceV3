@@ -1,0 +1,133 @@
+.aboutPage {
+    position: relative;
+    padding: 30vh 0 4rem;
+    background-color: $cwhite;
+
+    @include md-updown {
+        padding: 20vh 0 2rem;
+    }
+
+    &__content {
+        width: 75%;
+        @include md-updown {
+            width: 100%;
+        }
+        @include md-down {
+            width: 100%;
+        }
+
+        h1 {
+            span {
+                font-weight: 200;
+            }
+        }
+    }
+
+    &__subheading {
+        margin-top: 2rem;
+        img {
+            width: 30px;
+            margin-bottom: 2rem;
+
+            @include md-down {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        h3 {
+            color: $cdark;
+            font-weight: 300;
+            font-size: 1.4rem;
+            width: 80%;
+
+            @include md-down {
+                font-size: 1.25rem;
+                width: 90%;
+                line-height: 1.8rem;
+            }
+        }
+    }
+
+    &__wedo {
+        position: relative;
+        
+        .content {
+            position: relative;
+            width: 50%;
+
+            @include md-updown {
+                width: 100%;
+            }
+            @include md-down {
+                width: 100%;
+            }
+
+            h1 {
+                span {
+                    font-weight: 200;
+                }
+            }
+            
+            &__p {
+                color: $cdark;
+                font-weight: 300;
+                font-size: 1.4rem;
+                width: 75%;
+                line-height: 32px;
+
+                @include md-down {
+                    font-size: 1rem;
+                    line-height: 24px;
+                }
+            }
+
+            a.btn-line {
+                color: $cdark;
+                font-weight: 600;
+                text-decoration: none;
+                -webkit-transition: all .4s cubic-bezier(.2, .59, .21, .6);
+                -o-transition: all .4s cubic-bezier(.2, .59, .21, .6);
+                transition: all .4s cubic-bezier(.2, .59, .21, .6);
+                position: relative;
+                &:hover, &.active {
+                    color: lighten($cblue, 30%);
+                    &:before {
+                    width: 100%;
+                    }
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 0;
+                    background: lighten($cblue, 30%);
+                    height: 2px;
+                    border-radius: $border2;
+                    -webkit-transition: all .4s cubic-bezier(.2, .59, .21, .6);
+                    -o-transition: all .4s cubic-bezier(.2, .59, .21, .6);
+                    transition: all .4s cubic-bezier(.2, .59, .21, .6);
+                }
+            }
+        }
+
+        .sideImg {
+            position: absolute;
+            width: 70%;
+            right: -5%;
+            top: -25%;
+
+            @include md-updown {
+                width: 75%;
+                top: -84%;
+                right: -2%;
+            }
+
+            @include md-down {
+                width: 80%;
+                top: -44%;
+                right: 0;
+            }
+        }
+    }
+}

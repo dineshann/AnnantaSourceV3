@@ -1997,6 +1997,139 @@ header .dropdown-submenu > .dropdown-menu.dropdown-menu-animated.show {
   display: block;
 }
 
+.aboutPage {
+  position: relative;
+  padding: 30vh 0 4rem;
+  background-color: #ffffff;
+}
+@media only screen and (max-width: 768px) {
+  .aboutPage {
+    padding: 20vh 0 2rem;
+  }
+}
+.aboutPage__content {
+  width: 75%;
+}
+@media only screen and (max-width: 768px) {
+  .aboutPage__content {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .aboutPage__content {
+    width: 100%;
+  }
+}
+.aboutPage__content h1 span {
+  font-weight: 200;
+}
+.aboutPage__subheading {
+  margin-top: 2rem;
+}
+.aboutPage__subheading img {
+  width: 30px;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 767px) {
+  .aboutPage__subheading img {
+    margin-bottom: 1.5rem;
+  }
+}
+.aboutPage__subheading h3 {
+  color: #262A29;
+  font-weight: 300;
+  font-size: 1.4rem;
+  width: 80%;
+}
+@media only screen and (max-width: 767px) {
+  .aboutPage__subheading h3 {
+    font-size: 1.25rem;
+    width: 90%;
+    line-height: 1.8rem;
+  }
+}
+.aboutPage__wedo {
+  position: relative;
+}
+.aboutPage__wedo .content {
+  position: relative;
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .aboutPage__wedo .content {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .aboutPage__wedo .content {
+    width: 100%;
+  }
+}
+.aboutPage__wedo .content h1 span {
+  font-weight: 200;
+}
+.aboutPage__wedo .content__p {
+  color: #262A29;
+  font-weight: 300;
+  font-size: 1.4rem;
+  width: 75%;
+  line-height: 32px;
+}
+@media only screen and (max-width: 767px) {
+  .aboutPage__wedo .content__p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+}
+.aboutPage__wedo .content a.btn-line {
+  color: #262A29;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transition: all 0.4s cubic-bezier(0.2, 0.59, 0.21, 0.6);
+  -o-transition: all 0.4s cubic-bezier(0.2, 0.59, 0.21, 0.6);
+  transition: all 0.4s cubic-bezier(0.2, 0.59, 0.21, 0.6);
+  position: relative;
+}
+.aboutPage__wedo .content a.btn-line:hover, .aboutPage__wedo .content a.btn-line.active {
+  color: #3f86ff;
+}
+.aboutPage__wedo .content a.btn-line:hover:before, .aboutPage__wedo .content a.btn-line.active:before {
+  width: 100%;
+}
+.aboutPage__wedo .content a.btn-line:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  background: #3f86ff;
+  height: 2px;
+  border-radius: 2px;
+  -webkit-transition: all 0.4s cubic-bezier(0.2, 0.59, 0.21, 0.6);
+  -o-transition: all 0.4s cubic-bezier(0.2, 0.59, 0.21, 0.6);
+  transition: all 0.4s cubic-bezier(0.2, 0.59, 0.21, 0.6);
+}
+.aboutPage__wedo .sideImg {
+  position: absolute;
+  width: 70%;
+  right: -5%;
+  top: -25%;
+}
+@media only screen and (max-width: 768px) {
+  .aboutPage__wedo .sideImg {
+    width: 75%;
+    top: -84%;
+    right: -2%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .aboutPage__wedo .sideImg {
+    width: 80%;
+    top: -44%;
+    right: 0;
+  }
+}
+
 .footer {
   width: 100%;
   min-height: 150px;
