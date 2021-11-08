@@ -30,10 +30,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: $body-font;
-  font-size: 16px;
-  line-height: 1.5;
+  // font-size: 16px;
+  // line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background: #003bac;
+  background: $cwhite;
   outline: 0;
   color: $cdark;
   width: 100%;

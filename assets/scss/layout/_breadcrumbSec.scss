@@ -1,0 +1,22 @@
+.breadcrumbSec {
+    position: relative;
+    min-height: 60vh;
+    padding: 12rem 0 4rem;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(../img/aboutPattern.png);
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__breadcrumb {
+        margin-bottom: 0.4rem;
+    }
+
+    &__title {
+        h4 {
+            font-size: 4rem;
+            font-weight: 800;
+            color: $cblue;
+        }
+    }
+}

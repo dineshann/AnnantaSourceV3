@@ -1,4 +1,15 @@
+/* Header */ 
 header {
+    background-color: $cwhite;
+    &.header-absolute {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1030
+    }
+
     @include md-updown {
       background: rgb(34 5 115 / 90%);
     }
@@ -27,15 +38,6 @@ header {
           font-weight: 500;
         }
       }
-    }
-
-    &.header-absolute {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1030
     }
 
     .navbar {
@@ -80,6 +82,7 @@ header {
 
         img {
           margin-bottom: 0;
+          min-height: 45px;
         }
       
         &:hover, &:focus {
@@ -692,29 +695,6 @@ header {
         }
       }
       
-      .navbar-fullscreen-dark {
-        .navbar-collapse-fullscreen {
-          color: #fff;
-          background: rgba(33, 37, 41, 0.98);
-        }
-      
-        .nav-fullscreen-link {
-          color: #fff;
-      
-          &:hover, &:focus {
-            color: #fff;
-          }
-        }
-      
-        .fullscreen-close {
-          color: #fff;
-      
-          &:hover, &:focus {
-            color: #fff !important;
-          }
-        }
-      }
-      
       .navbar .dropdown-toggle, .top-bar .dropdown-toggle {
         position: relative;
       }
@@ -994,3 +974,5 @@ header {
       }
     }
 }
+
+/* Header End */
