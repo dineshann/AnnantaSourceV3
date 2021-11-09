@@ -1,12 +1,18 @@
 .breadcrumbSec {
     position: relative;
     min-height: 60vh;
+    max-height: 60vh;
     padding: 12rem 0 4rem;
     display: flex;
     align-items: flex-end;
     background-image: url(../img/aboutPattern.png);
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
+
+    @include md-updown {
+        min-height: 50vh;
+        max-height: 50vh;
+    }
 
     &__breadcrumb {
         margin-bottom: 0.4rem;

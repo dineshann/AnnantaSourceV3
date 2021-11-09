@@ -68,4 +68,9 @@ $(document).ready(function () {
             }
         ]
     });
+
+    // Parallax
+    $('.bg-parallax').each(function () {
+        $(this).parallax("50%", 0.5);
+    });
 });

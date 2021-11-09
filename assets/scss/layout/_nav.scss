@@ -1,6 +1,7 @@
 /* Header */ 
 header {
-    background-color: $cwhite;
+    background-color: rgb(255 255 255 / 80%);
+    // box-shadow: 0px 10px 30px -24px rgb(0 76 152 / 80%);
     &.header-absolute {
         position: absolute;
         top: 0;
@@ -31,7 +32,7 @@ header {
         padding-left: 1rem;
         padding-right: 1rem;
         text-decoration: none;
-        color: $cwhite;
+        color: $cblue;
         @include transition($all);
 
         &:hover {
@@ -66,28 +67,77 @@ header {
 
         &.fixed-top {
             position: fixed;
-            background: rgb(28 28 28 / 80%);
+            background: rgb(255 255 255 / 95%);
             -webkit-backdrop-filter: saturate(180%) blur(20px);
             backdrop-filter: saturate(180%) blur(20px);
             animation: smoothScroll 1s forwards;
         }
-    }
-      
-    .navbar-brand {
-        padding-top: .275rem;
-        padding-bottom: .275rem;
-        margin-right: 1rem;
-        font-size: 1.2rem;
-        white-space: nowrap;
 
-        img {
-          margin-bottom: 0;
-          min-height: 45px;
+        .navbar-brand {
+          padding-top: .275rem;
+          padding-bottom: .275rem;
+          margin-right: 1rem;
+          font-size: 1.2rem;
+          white-space: nowrap;
+  
+          img {
+            margin-bottom: 0;
+            min-height: 45px;
+          }
+        
+          &:hover, &:focus {
+              text-decoration: none;
+          }
+      }
+
+      .navbar-nav {
+        .nav-item  {
+
+          .nav-link {
+            color: $cblue !important;
+
+            &:hover {
+              color: darken($cblue, 50);
+            }
+          }
+
+          .dropdown-menu {
+            padding: 0;
+            .dropdown-item {
+              padding: 0.5rem 1rem;
+              &:hover {
+                color: $cwhite;
+                background-color: $cblue;
+              }
+            }
+          }
         }
-      
-        &:hover, &:focus {
-            text-decoration: none;
+      }
+
+      .navbar-collapse {
+        .nav-item {
+          .btn-outline-light {
+            color: $cblue;
+            border-color: $cblue;
+
+            &:hover {
+              color: $cwhite;
+              background-color: $cblue;
+            }
+          }
+
+          .btn-light {
+            color: $cwhite;
+            border-color: $cblue;
+            background-color: $cblue;
+            @include transition($all);
+
+            &:hover {
+              background-color: darken($cblue, 10);
+            }
+          }
         }
+      }
     }
       
     .navbar-nav {
@@ -724,11 +774,11 @@ header {
       }
       
       .navbar-light .dropdown-toggle::after, .navbar-hover-light:hover .dropdown-toggle::after, .navbar-fixed-light.fixed-top .dropdown-toggle::after, .top-bar .dropdown-toggle::after {
-        background: right center url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='rgba(255,255,255,0.65)' stroke-miterlimit='10' stroke-width='5' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E") no-repeat;
+        background: right center url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='rgba(0,65,185,0.95)' stroke-miterlimit='10' stroke-width='5' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E") no-repeat;
       }
       
       .navbar-dark .dropdown-toggle::after, .navbar-hover-dark:hover .dropdown-toggle::after, .navbar-fixed-dark.fixed-top .dropdown-toggle::after {
-        background: right center url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='rgba(255,255,255,0.9)' stroke-miterlimit='10' stroke-width='5' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E") no-repeat;
+        background: right center url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Down%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='rgba(0,65,185,0.9)' stroke-miterlimit='10' stroke-width='5' d='M20 26l11.994 14L44 26' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E") no-repeat;
       }
       
       .dropdown-menu-animated {
