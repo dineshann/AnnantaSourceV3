@@ -1274,6 +1274,60 @@ header .dropdown-submenu > .dropdown-menu.dropdown-menu-animated.show {
     padding-top: 180px;
   }
 }
+.introSec .home-full-item .icon-scroll {
+  position: absolute;
+  left: 8%;
+  width: 24px;
+  height: 40px;
+  margin-left: -20px;
+  bottom: 10%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 2px #ffffff;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 4;
+}
+.introSec .home-full-item .icon-scroll:before {
+  position: absolute;
+  left: 50%;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+.introSec .home-full-item .icon-scroll span {
+  position: absolute;
+  bottom: -18px;
+  color: #ffffff;
+  font-size: 0.7rem;
+  left: -2px;
+}
+.introSec .home-full-item .icon-chat {
+  display: block;
+  position: absolute;
+  z-index: 4;
+  right: 8%;
+  width: 54px;
+  height: 54px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: -20px;
+  bottom: 10%;
+  margin-top: -35px;
+  border-radius: 50%;
+  padding: 0.65rem 0.25rem;
+}
+.introSec .home-full-item .icon-chat svg {
+  width: 100%;
+}
 .introSec__content {
   position: relative;
   z-index: 20;
@@ -1282,7 +1336,7 @@ header .dropdown-submenu > .dropdown-menu.dropdown-menu-animated.show {
 .introSec__content .bgImg {
   position: absolute;
   left: 0;
-  top: -12px;
+  bottom: 0;
 }
 @media only screen and (max-width: 768px) {
   .introSec__content .bgImg {
@@ -1331,6 +1385,24 @@ header .dropdown-submenu > .dropdown-menu.dropdown-menu-animated.show {
 @media (min-width: 768px) {
   .dark-overlay-md-0::after {
     display: none;
+  }
+}
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
   }
 }
 .search-area-wrapper {
