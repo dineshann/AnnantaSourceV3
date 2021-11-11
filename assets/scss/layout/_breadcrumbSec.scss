@@ -6,8 +6,9 @@
     display: flex;
     align-items: flex-end;
     background-image: url(../img/aboutPattern.png);
-    background-size: contain;
-    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 
     @include md-updown {
         min-height: 50vh;
