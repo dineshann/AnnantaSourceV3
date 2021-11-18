@@ -5,7 +5,7 @@
 /* Code by DInesh */
 
 // Landing Page SASS to CSS
-// cd assets
+// cd v3/AnnantaSourceWebsite_v3/Web/wwwroot/assets
 // Compile Path sass --watch scss/style.scss:css/style.css
 
 // Base
@@ -24,6 +24,8 @@
 @import "layout/product";
 @import "layout/solution";
 @import "layout/aboutPage";
+@import "layout/productPage";
+@import "layout/servicePage";
 @import "layout/contactPage";
 @import "layout/footer";
 

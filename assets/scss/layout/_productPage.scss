@@ -1,0 +1,164 @@
+.productPage {
+    position: relative;
+    padding: 4rem 0;
+    background-color: $cwhite;
+
+    @include md-updown {
+        padding: 8vh 0 2rem;
+    }
+
+    &__content {
+        width: 80%;
+        @include md-updown {
+            width: 100%;
+        }
+        @include md-down {
+            width: 100%;
+        }
+
+        h1 {
+            font-weight: 300;
+            color: $cdark;
+            margin-bottom: 2rem;
+            span {
+                font-weight: 800;
+            }
+        }
+    }
+
+    &__accordion {
+        .accordion-item {
+            border-left: 0;
+            border-right: 0;
+
+            .accordion-header {
+                .accordion-button {
+                    outline: none;
+                    box-shadow: none;
+                    padding: 2rem 1.25rem;
+
+                    .logoTitle {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            width: 220px;
+                        }
+                        
+                        svg {
+                            margin-left: 2rem;
+                            g {
+                                path, line {
+                                    stroke: lighten($cdark, 60);
+                                    @include transition($all);
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        background-color: lighten($cblue, 60);
+                        .logoTitle {                            
+                            svg {
+                                g {
+                                    path, line {
+                                        stroke: $cblue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:not(.collapsed) {
+                        background-color: $cwhite;
+                        border-bottom-color: $cwhite;
+
+                        .logoTitle {                            
+                            svg {
+                                g {
+                                    path, line {
+                                        stroke: $cblue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .accordion-collapse {
+                .accordion-body {
+                    .proItems {
+                        border: 1px solid rgba(0,0,0,.125);
+                        margin-bottom: 2rem;
+                        border-radius: $border8;
+                        @include transition($all);
+                        &:hover {
+                            @include box-shadow($light-bs);
+                        }
+                        .card-body {
+                            padding: 2rem;
+
+                            img {
+                                height: 26px;
+                                margin-bottom: 2rem;
+                            }
+                        }
+
+                        .card-footer {
+                            background-color: $cwhite;
+                            border-radius: 0 0 $border8 $border8;
+                            padding: 0;
+                            .cta {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                background-color: $cwhite;
+                                border-radius: 0 0 $border8 $border8;
+                                color: $cblue;
+                                padding: 1.4rem 2rem;
+                                @include transition($all);
+
+                                span {
+                                    font-weight: 500;
+                                    font-size: 0.85rem;
+                                }
+
+                                svg {
+                                    width: 40px;
+                                    g {
+                                        path, line {
+                                            @include transition($all);
+                                            stroke: $cblue;
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    color: $cwhite;
+                                    background-color: $cblue;
+
+                                    svg {
+                                        g {
+                                            path, line {
+                                                stroke: $cwhite;
+                                            }
+                                            #Path_2 {
+                                                @include transition($all);
+                                                transform: translate(0px, -2.519px);
+                                            }
+                                            #Line_1 {
+                                                @include transition($all);
+                                                transform: translate(9px, 10px);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

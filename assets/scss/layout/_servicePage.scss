@@ -1,0 +1,108 @@
+.servicePage {
+    position: relative;
+    padding: 4rem 0;
+    background-color: $cwhite;
+
+    @include md-updown {
+        padding: 8vh 0 2rem;
+    }
+
+    &__content {
+        width: 80%;
+        @include md-updown {
+            width: 100%;
+        }
+        @include md-down {
+            width: 100%;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: $cdark;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__topics {
+        margin-top: 4rem;
+
+        @include md-updown {
+            margin-top: 3rem;
+        }
+
+        @include md-down {
+            margin-top: 2rem;
+        }
+        hr {
+            border-color: $cdark;
+        }
+        &--cont {
+            padding: 2.2rem 0;
+
+            @include md-updown {
+                padding: 2rem 0;
+            }
+
+            @include md-down {
+                padding: 2rem 0;
+            }
+
+            h4 {
+                font-size: 1.4rem;
+                font-weight: 400;
+                @include transition($all);
+
+                &.count {
+                    font-size: 1.1rem;
+                    font-weight: 300;
+                }
+            }
+
+            p {
+                font-size: 1rem;
+                width: 80%;
+                @include md-updown {
+                    width: 100%;
+                }
+                @include md-down {
+                    width: 100%;
+                }
+            }
+
+            .btn-outline-light {
+                font-size: 0.8rem;
+                color: $cblue;
+                border-color: $cblue;
+                border-radius: 3rem;
+                padding: .5rem 1.4rem;
+                text-transform: uppercase;
+                @include transition($all);
+    
+                &:hover {
+                    color: $cwhite;
+                    background-color: $cblue;
+                }
+            }
+
+            &:hover {
+                h4 {
+                    font-weight: 600;
+    
+                    &.count {
+                        font-weight: 300;
+                    }
+                }
+
+                .btn-outline-light {
+                    color: $cwhite;
+                    background-color: lighten($cblue, 20);
+
+                    &:hover {
+                        background-color: $cblue;
+                    }
+                }
+            }
+        }
+    }
+}

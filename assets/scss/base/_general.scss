@@ -78,4 +78,13 @@ body {
       min-height: 5vh;
     }
   }
+
+  &__xsmall {
+    position: relative;
+    min-height: 6vh;
+
+    @include md-down {
+      min-height: 3vh;
+    }
+  }
 }
